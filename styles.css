@@ -520,3 +520,47 @@ h2{
         font-size: 36px;
     }
 }
+
+
+
+
+
+
+
+
+
+/* Ajuste general para el contenedor de contacto */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-item {
+    flex: 1;
+    min-width: 280px; /* Ancho mínimo para cada ítem */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Limitar el ancho de la dirección para evitar alargamiento */
+.contact-item p {
+    word-wrap: break-word;
+    max-width: 100%;
+    white-space: pre-line; /* Mantiene los saltos de línea en el texto */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

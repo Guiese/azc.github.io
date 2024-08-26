@@ -461,3 +461,62 @@ p{
 h2{
     color: #4c4ebd;
 }
+
+
+
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Ajustar tamaño de texto en la sección Hero */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+/* Hacer que las características (features) se apilen en dispositivos móviles */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Ajustar tamaño de texto y padding en dispositivos muy pequeños (480px o menos) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .feature i {
+        font-size: 36px;
+    }
+}
